@@ -1,0 +1,46 @@
+﻿<Window x:Class="DownloadMP3_Task.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DownloadMP3_Task"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="3.5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid>
+                <StackPanel Margin="10,0,0,0"  Orientation="Horizontal">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+                        <Button Background="Transparent" Padding="10" Command="{Binding AddDownloaderCommand}" >
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="30"/>
+                                </Style>
+                            </Button.Resources>
+                            <Image Width="60" Source="/Images/plusSign.png" Stretch="Fill"></Image>
+                        </Button>
+                    </StackPanel>
+
+                    <StackPanel Margin="10,0,0,0" VerticalAlignment="Center">
+                        <TextBlock FontSize="16" Text="Click to add more download panel" FontWeight="DemiBold">
+
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <ScrollViewer Grid.Row="1">
+            <WrapPanel Name="wrapPanel" >
+
+            </WrapPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
