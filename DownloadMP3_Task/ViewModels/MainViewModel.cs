@@ -1,4 +1,5 @@
 ﻿using DownloadMP3_Task.Commands;
+using DownloadMP3_Task.Services;
 using DownloadMP3_Task.ViewModels.UCViewModels;
 using DownloadMP3_Task.Views.UserControls;
 using System;
@@ -22,6 +23,8 @@ namespace DownloadMP3_Task.ViewModels
 
         public MainViewModel()
         {
+           // MusicDownloaderService.DownloadMusic();
+            //var speed=InternetService.CheckInternetSpeed();
             AddDownloaderCommand = new RelayCommand(c =>
             {
                 var view = new DownloadPanelUC();

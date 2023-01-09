@@ -23,6 +23,7 @@ namespace DownloadMP3_Task.Views.UserControls
         public DownloadPanelUC()
         {
             InitializeComponent();
+
         }
     }
 }

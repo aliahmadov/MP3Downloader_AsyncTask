@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DownloadMP3_Task.Views.UserControls"
              mc:Ignorable="d" 
-            Width="250" Height="250">
+             Height="300" MaxWidth="300">
     <Border CornerRadius="10" BorderThickness="1" BorderBrush="DarkGray" Padding="3" Background="AliceBlue">
         <Grid Background="AliceBlue">
             <Grid.RowDefinitions>
@@ -29,12 +29,45 @@
 
             <Grid Grid.Row="1">
                 <Grid>
-                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                        <TextBlock Text="Enter URL" FontWeight="DemiBold"></TextBlock>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                            <TextBlock Text="Enter URL" FontWeight="DemiBold"></TextBlock>
 
-                        <TextBox Margin="5,0,0,0" Width="150" Text="{Binding URLToDownload, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                            
-                        </TextBox>
+                            <TextBox Margin="5,0,0,0" Width="150" Text="{Binding URLToDownload, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+
+                            </TextBox>
+                        </StackPanel>
+
+                        <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                            <TextBlock Text="Author: "></TextBlock>
+                            <TextBlock Text="{Binding Video.Info.Author}" FontStyle="Italic" FontWeight="DemiBold"></TextBlock>
+                        </StackPanel>
+                        
+                        <WrapPanel Margin="0,5,0,0" Orientation="Horizontal">
+                            <TextBlock Text="Video Title: "></TextBlock>
+                            <TextBlock Text="{Binding Video.Title}" TextWrapping="Wrap" FontStyle="Italic" FontWeight="DemiBold"></TextBlock>
+                        </WrapPanel>
+
+                        <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                            <TextBlock Text="Video Duration: "></TextBlock>
+                            <TextBlock Text="{Binding Video.Info.LengthSeconds}" FontStyle="Italic" FontWeight="DemiBold"></TextBlock>
+                            <TextBlock Text=" seconds"></TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Margin="0,20,0,0">
+                            <TextBlock Text="Progress bar" FontSize="10"></TextBlock>
+                            <ProgressBar Name="progressBar" Height="20" Margin="0,5,0,0" >
+                                <ProgressBar.Resources>
+                                    <Style TargetType="Border">
+                                        <Setter Property="CornerRadius" Value="10"></Setter>
+                                    </Style>
+                                </ProgressBar.Resources>
+                            </ProgressBar>
+                        </StackPanel>
+                        
+                        <StackPanel Margin="0,10,0,0">
+                            <TextBlock Text="{Binding Duration, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                        </StackPanel>
                     </StackPanel>
                 </Grid>
             </Grid>

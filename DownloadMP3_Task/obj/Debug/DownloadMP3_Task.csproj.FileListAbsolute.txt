@@ -16,3 +16,10 @@ C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\obj\Debug\Download
 C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\obj\Debug\DownloadMP3_Task.pdb
 C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\obj\Debug\Views\UserControls\DownloadPanelUC.g.cs
 C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\obj\Debug\Views\UserControls\DownloadPanelUC.baml
+C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\bin\Debug\libvideo.dll
+C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\bin\Debug\MediaToolkit.dll
+C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\bin\Debug\Newtonsoft.Json.dll
+C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\bin\Debug\Newtonsoft.Json.xml
+C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\eliah\source\repos\DownloadMP3_Task\DownloadMP3_Task\obj\Debug\DownloadMP3_Task.csproj.CopyComplete
