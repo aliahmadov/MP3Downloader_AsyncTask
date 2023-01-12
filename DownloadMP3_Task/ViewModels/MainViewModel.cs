@@ -1,5 +1,4 @@
 ﻿using DownloadMP3_Task.Commands;
-using DownloadMP3_Task.Services;
 using DownloadMP3_Task.ViewModels.UCViewModels;
 using DownloadMP3_Task.Views.UserControls;
 using System;
@@ -20,7 +19,6 @@ namespace DownloadMP3_Task.ViewModels
         public RelayCommand AddDownloaderCommand { get; set; }
 
 
-
         public MainViewModel()
         {
            // MusicDownloaderService.DownloadMusic();
@@ -30,6 +28,7 @@ namespace DownloadMP3_Task.ViewModels
                 var view = new DownloadPanelUC();
                 var viewModel = new DownloadPanelViewModel();
                 view.DataContext = viewModel;
+                
 
                 view.Margin = new Thickness(10, 40, 10, 10);
 
